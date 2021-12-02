@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>MAQUETTE</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- Navigation -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span
+                                        class=" span fst-italic border border-dark rounded-circle p-1">FF</span>
+                                    Arkham</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Films</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Horaires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Fin navigation -->
+
+            <!-- Headers -->
+            <div class="card-body bg-success p-2 text-dark bg-opacity-25">
+                <h1 class=" card-title">Bienvenue à Arkan</h1>
+                <p class="card-text">Retrouver la liste de noms films préfèrés ainsi que les horaires de nos séances
+                </p>
+                <hr>
+                <p class="card-text fw-bold">Pour des informations supplémentaires ou pour reserver</p>
+                <a href="#" class="btn btn-primary">Nous contacter</a>
+            </div>
+            <!-- Fin Heaers -->
+
+            <div class="container">
+                <!-- Main -->
+                <h2 class="mt-5">Nos Films</h2>
+                <hr>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img.jfif" class="card-img-top" alt="photo1">
+                            <div class="card-body">
+                                <h5 class="card-title">La nuit du chasseur</h5>
+                                <p class="card-text">Un prêcheur du chasseur poursuit dans l'Amérique
+                                    rurale deux enfants dont le pére vient d'être condamné
+                                    pour vol et meutre.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+
+                                <a href="#" class="btn btn-primary">Nous contacter</a>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap">Horaires</button>
+
+                                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">La nuit du chasseur
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <h4 class="col-form-label">Horaires
+                                                            :</h4>
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Fermer</th>
+                                                                    <th scope="col">Fermer</th>
+                                                                    <th scope="col">Fermer</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>00:00</td>
+                                                                    <td>02h00</td>
+                                                                    <td>02h00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4:00</td>
+                                                                    <td>4:30</td>
+                                                                    <td>4:00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>8:00</td>
+                                                                    <td>2:00</td>
+                                                                    <td>8:00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fermer</button>
+                                                <button type="button" class="btn btn-success">Réserver</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img.jfif" class="card-img-top" alt="photo1">
+                            <div class="card-body">
+                                <h5 class="card-title">Psychose</h5>
+                                <p class="card-text">Marion Crane en a assez de ne pouvoir mener sa vie
+                                    comme elle l'entend. Son travail ne la passionne plus...
+                                </p>
+                            </div>
+                            <div class="card-footer">
+
+                                <a href="#" class="btn btn-primary">Nous contacter</a>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal2" data-bs-whatever="@getbootstrap">Horaires</button>
+
+                                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Avengers
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <h4 class="col-form-label">Horaires
+                                                            :</h4>
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Jeudi</th>
+                                                                    <th scope="col">Vendredi</th>
+                                                                    <th scope="col">Samedi</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>00:00</td>
+                                                                    <td>02h00</td>
+                                                                    <td>02h00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4:00</td>
+                                                                    <td>4:30</td>
+                                                                    <td>4:00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>8:00</td>
+                                                                    <td>2:00</td>
+                                                                    <td>8:00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fermer</button>
+                                                <button type="button" class="btn btn-success">Réserver</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img.jfif" class="card-img-top" alt="photo1">
+                            <div class="card-body">
+                                <h5 class="card-title">Freaks</h5>
+                                <p class="card-text">Des êtres difformes se produisent dans un célèbre cirque,
+                                    afin de s'exhiber en tant que phénomène de foire...
+                                </p>
+                            </div>
+                            <div class="card-footer">
+
+                                <a href="#" class="btn btn-primary">Nous contacter</a>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3" data-bs-whatever="@getbootstrap">Horaires</button>
+
+                                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">X Men
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <h2 class="col-form-label">Horaires
+                                                            :</h2>
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Vacances</th>
+                                                                    <th scope="col">Vacances</th>
+                                                                    <th scope="col">Vacances</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>00:00</td>
+                                                                    <td>00:00</td>
+                                                                    <td>00:00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>00:00</td>
+                                                                    <td>00:00</td>
+                                                                    <td>00:00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>00:00</td>
+                                                                    <td>00:00</td>
+                                                                    <td>00:00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fermer</button>
+                                                <button type="button" class="btn btn-success">Réserver</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Calendrier -->
+            <h2 class="mt-5">Nos horaires</h2>
+            <hr>
+            <div class="container col-10">
+                <div class="row row-cols-1 row-cols-md-3 sm-3 g-4">
+                    <table class="table table-dark ">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Lundi</th>
+                                <th scope="col">Mardi</th>
+                                <th scope="col">Mercredi</th>
+                                <th scope="col">Jeudi</th>
+                                <th scope="col">Vendredi</th>
+                                <th scope="col">Samedi</th>
+                                <th scope="col">Dimanche</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Matin</th>
+                                <td>None</td>
+                                <td>9:00-12:00</td>
+                                <td>9:00-12:00</td>
+                                <td>9:00-12:00</td>
+                                <td>9:00-12:00</td>
+                                <td>9:00-12:00</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Aprem</th>
+                                <td>14:00-20:00</td>
+                                <td>14:00-20:00</td>
+                                <td>14:00-20:00</td>
+                                <td>14:00-20:00</td>
+                                <td>14:00-20:00</td>
+                                <td>14:00-20:00</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Fin Calendrier -->
+
+            <!-- Formulaire -->
+            <h2 class="mt-5">Nous contacter</h2>
+            <hr>
+            <div class="container col-12">
+                <form class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-3">
+                        <label for="validationDefault01" class="form-label">Prénom :</label>
+                        <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault02" class="form-label">E-mail :</label>
+                        <input type="email" class="form-control" id="validationDefault02" required>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Réserver :</h4>
+                        <h6>Film</h6>
+                        <div class=" input-group">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Votre film ?</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <div class="invisible">Réserver :</div>
+                        <h6>Horaire</h6>
+                        <div class="input-group">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Quelle horaire ?</option>
+                                <option value="1">11:00</option>
+                                <option value="2">12:00</option>
+                                <option value="3">14:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="form-label">Votre problème</h2>
+                        <textarea cols="43" rows="10"></textarea>
+                    </div>
+                    <div class="col-md-6mt-5">
+                        <h6>Age :</h6>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label for="inlineRadio1">
+                                &#10095; 18 ans</label>
+                        </div>
+                        <div class="form-check form-check-inline ">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">18-59 ans</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio3">> 60 ans</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio4">Etudiants</label>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button class="btn btn-primary" type="submit">Réserver</button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Fin Formulaire -->
+        </div>
+    </div>
+    <!-- Fin Main -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
